@@ -4,6 +4,10 @@
     
 }
 
+.wrapper {
+    position: relative;
+}
+
 .player {
     width: 62px;
     height: 62px;
@@ -12,8 +16,26 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    border: 0px;
     position: absolute;
     inset:0;
     margin:auto;
-    border: 0px;
 }
+
+.hidden {
+    opacity: 0;
+}
+
+.actions {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;    
+}
+
+.action {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
